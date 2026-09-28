@@ -1,0 +1,19 @@
+{
+  "name": "jev-approve",
+  "version": "0.1.0",
+  "description": "Opt-in Jev judgments and conservative tool approval for OMP",
+  "type": "module",
+  "files": ["extension.mjs", "src", "README.md", "VERIFICATION.md"],
+  "omp": { "extensions": ["./extension.mjs"] },
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "smoke:omp": "node scripts/omp-smoke.mjs",
+    "smoke:agent": "node scripts/agent-smoke.mjs",
+    "smoke:rebind": "node scripts/agent-rebind-smoke.mjs",
+    "smoke:browser": "node scripts/browser-boundary-smoke.mjs",
+    "eval:live": "node scripts/evaluate-live.mjs"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
